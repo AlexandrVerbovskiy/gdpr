@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Cookies Popup(Alex Verbovskiy)",
+    "version": "1.0",
+    "host_permissions": ["*://www.eatthismuch.com/*"],
+    "content_scripts": [{
+        "matches": ["*://www.eatthismuch.com/*"],
+        "js": [
+            "content.js"
+        ],
+        "css": [
+            "popup.css"
+        ]
+    }],
+    "permissions": [
+        "storage"
+    ]
+}
